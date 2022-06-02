@@ -1,0 +1,113 @@
+{
+    "header": {
+        "title": "Julio John App",
+        "titleColor": "neutralLightPure",
+        "backgroundColor": "neutralDarkPure",
+        "statusBarStyle": "light"
+    },
+    "body": [
+        {
+            "id": "TextComponent",
+            "data": {
+                "text": "Minhas paixões",
+                "font": "title"
+            },
+            "style": {
+                "bounds": {
+                    "top": "md",
+                    "bottom": "md",
+                    "alignment": "left"
+                }
+            }
+        },
+        {
+            "id": "CellComponent",
+            "data": {
+                "title": "TFT",
+                "value": "5"
+            }
+        },
+        {
+            "id": "CellComponent",
+            "data": {
+                "title": "Cachorros",
+                "value": "7",
+                "hasSeparator": true
+            }
+        },
+        {
+            "id": "CellComponent",
+            "data": {
+                "title": "Eu",
+                "value": "2 milhoes",
+                "hasSeparator": false
+            }
+        },
+        {
+            "id": "TextComponent",
+            "data": {
+                "text": "Permitido o uso de 1 cupom por pedido.",
+                "font": "body"
+            },
+            "style": {
+                "bounds": {
+                    "top": "xxl",
+                    "alignment": "center"
+                }
+            }
+        },
+        {
+            "id": "TextComponent",
+            "data": {
+                "text": "Cupom válido em pagamentos pelo app/site.",
+                "font": "body"
+            },
+            "style": {
+                "bounds": {
+                    "top": "xxxs",
+                    "alignment": "center"
+                }
+            }
+        },
+        {
+            "id": "TextComponent",
+            "data": {
+                "text": "Cupom não é válido na mesma loja em menos de 1h.",
+                "font": "body"
+            },
+            "style": {
+                "bounds": {
+                    "top": "xxxs",
+                    "alignment": "center"
+                }
+            }
+        },
+        {
+            "id": "VerticalSpacingComponent",
+            "data": {
+                "value": "us",
+                "color": "neutralDark3"
+            },
+            "style": {
+                "bounds": {
+                    "top": "md",
+                    "bottom": "md",
+                    "left": "md",
+                    "right": "md"
+                }
+            }
+        },
+        {
+            "id": "TextComponent",
+            "data": {
+                "text": "Clube sujeito a alterações sem aviso prévio.",
+                "font": "body"
+            },
+            "style": {
+                "bounds": {
+                    "alignment": "center"
+                }
+            }
+        }
+    ]
+}

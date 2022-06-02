@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Treco",
+        "repositoryURL": "https://github.com/pedrocontine/Treco",
+        "state": {
+          "branch": "main",
+          "revision": "60c8fc6c94b0886a73ec57d5dce599db78e2d427",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
