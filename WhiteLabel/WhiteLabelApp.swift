@@ -18,7 +18,7 @@ struct WhiteLabelApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ListView(jsonName: "home")
+            GenericView(viewName: "home")
                 .preferredColorScheme(.light)
         }
     }

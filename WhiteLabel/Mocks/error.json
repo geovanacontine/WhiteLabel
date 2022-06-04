@@ -1,0 +1,40 @@
+{
+    "header": {
+        "title": "White Label",
+        "titleColor": "neutralDarkPure",
+        "backgroundColor": "neutralLightPure",
+        "statusBarStyle": "dark"
+    },
+    "body": [
+        {
+            "id": "TextComponent",
+            "data": {
+                "text": "Não foi possível carregar suas informações",
+                "font": "heading4"
+            },
+            "style": {
+                "bounds": {
+                    "top": "xxl",
+                    "right": "lg",
+                    "left": "lg",
+                    "alignment": "center"
+                }
+            }
+        },
+        {
+            "id": "TextComponent",
+            "data": {
+                "text": "Tente novamente mais tarde",
+                "font": "description"
+            },
+            "style": {
+                "bounds": {
+                    "top": "xxs",
+                    "right": "lg",
+                    "left": "lg",
+                    "alignment": "center"
+                }
+            }
+        }
+    ]
+}
