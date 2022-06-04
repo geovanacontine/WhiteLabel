@@ -12,10 +12,15 @@ struct WLCellComponent: WLComponent {
     let id = UUID().uuidString
     let data: WLCellDTO?
     let style: WLComponentStyle?
+    let actions: WLCellActions?
     
     func render() -> AnyView {
-        WLCellView(dto: data, style: style).toAny()
+        WLCellView(dto: data, style: style, actions: actions).toAny()
     }
+}
+
+struct WLCellActions: Decodable {
+    let onTap: WLNavigationAction?
 }
 
 struct WLCellDTO: Decodable {
@@ -30,45 +35,50 @@ struct WLCellDTO: Decodable {
 struct WLCellView: View {
     let dto: WLCellDTO?
     let style: WLComponentStyle?
+    let actions: WLCellActions?
+    
+    @State private var isShowingDetailView = false
     
     var body: some View {
         VStack {
-            HStack {
-                HStack {
-                    WLImageView(dto: dto?.icon)
-                    Spacer()
-                        .frame(width: Spacing.xs.value)
-                }
-                .isVisible(dto?.icon != nil)
-                VStack(alignment: .leading) {
-                    TrecoText(dto?.title ?? "")
-                        .textStyle(.paragraph)
-                    TrecoText(dto?.subtitle ?? "")
-                        .textStyle(.description)
-                        .isVisible(dto?.subtitle.isNilOrEmpty == false)
-                }
-                Spacer()
-                TrecoText(dto?.value ?? "")
-                    .textStyle(.description)
-                HStack {
-                    Spacer()
-                        .frame(width: Spacing.xs.value)
-                    WLImageView(name: "chevron",
-                                size: .iconSM,
-                                tintColor: .neutralDark2)
-                }
-                .isVisible(dto?.hasDisclosure ?? true)
-            }
             VStack {
                 Spacer()
                     .frame(height: Spacing.xs.value)
-                Rectangle()
-                    .fill(.quaternary)
-                    .frame(height: 1)
+                HStack {
+                    HStack {
+                        WLImageView(dto: dto?.icon)
+                        Spacer()
+                            .frame(width: Spacing.xs.value)
+                    }
+                    .isVisible(dto?.icon != nil)
+                    VStack(alignment: .leading) {
+                        TrecoText(dto?.title ?? "")
+                            .textStyle(.paragraph)
+                        TrecoText(dto?.subtitle ?? "")
+                            .textStyle(.description)
+                            .isVisible(dto?.subtitle.isNilOrEmpty == false)
+                    }
+                    Spacer()
+                    TrecoText(dto?.value ?? "")
+                        .textStyle(.description)
+                    HStack {
+                        Spacer()
+                            .frame(width: Spacing.xs.value)
+                        WLImageView(name: "chevron",
+                                    size: .iconSM,
+                                    tintColor: .neutralDark2)
+                    }
+                    .isVisible(dto?.hasDisclosure ?? true)
+                }
+                Spacer()
+                    .frame(height: Spacing.xs.value)
             }
-            .isVisible(dto?.hasSeparator ?? true)
-            Spacer()
-                .frame(height: Spacing.xs.value)
+            .applyNavigation(actions?.onTap)
+            
+            Rectangle()
+                .fill(Color.treco(.neutralDark3))
+                .frame(height: 1)
+                .isVisible(dto?.hasSeparator ?? true)
         }
         .applySpacing(style?.bounds)
     }
@@ -88,6 +98,7 @@ struct WLCellView_Previews: PreviewProvider {
                                           tintColor: nil),
                               hasSeparator: true,
                               hasDisclosure: true),
-                   style: nil)
+                   style: nil,
+                   actions: nil)
     }
 }

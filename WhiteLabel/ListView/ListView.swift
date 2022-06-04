@@ -9,9 +9,10 @@ import SwiftUI
 
 struct ListView: View {
     
-    @ObservedObject var controller = ListViewController()
+    @ObservedObject var controller: ListViewController
     
-    init() {
+    init(jsonName: String) {
+        self.controller = ListViewController(jsonName: jsonName)
         UIApplication.shared.statusBarStyle = .darkContent
     }
     
@@ -34,6 +35,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        ListView(jsonName: "home")
     }
 }

@@ -18,14 +18,19 @@
 		2046375C28428ECA00E0A7C9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046375B28428ECA00E0A7C9 /* ListView.swift */; };
 		2046375E28428FA800E0A7C9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046375D28428FA800E0A7C9 /* ListViewController.swift */; };
 		204FDF9328440FA400D98196 /* WLCellComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204FDF9228440FA400D98196 /* WLCellComponent.swift */; };
+		205FE48D284BBA57009D25D7 /* WLNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FE48C284BBA57009D25D7 /* WLNavigationAction.swift */; };
 		2074F7EF284557010021FE79 /* WLAlignmentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074F7EE284557010021FE79 /* WLAlignmentStyle.swift */; };
 		2074F7F12845572D0021FE79 /* WLStatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074F7F02845572D0021FE79 /* WLStatusBarStyle.swift */; };
+		20900CBF284BE7A800BBD585 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CBE284BE7A800BBD585 /* chat.json */; };
+		20900CC1284BEA5200BBD585 /* WLNavigatableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20900CC0284BEA5200BBD585 /* WLNavigatableModifier.swift */; };
+		20900CC3284BEC8F00BBD585 /* notifications.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CC2284BEC8F00BBD585 /* notifications.json */; };
+		20900CC5284BECC000BBD585 /* payment.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CC4284BECC000BBD585 /* payment.json */; };
 		20B80AFF284AC3CF00A13BC7 /* WLVisibleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */; };
 		20B80B03284AD3F700A13BC7 /* WLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80B02284AD3F700A13BC7 /* WLImageView.swift */; };
 		20D6866A284432D7006038E5 /* WLVerticalSpacingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */; };
 		20F7E5432842EB94001F8F86 /* WLSpacingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */; };
 		20F7E5452842EC4A001F8F86 /* WLComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5442842EC4A001F8F86 /* WLComponentStyle.swift */; };
-		20FD29532842D5A700DA2FBE /* get-home.json in Resources */ = {isa = PBXBuildFile; fileRef = 20FD29522842D5A700DA2FBE /* get-home.json */; };
+		20FD29532842D5A700DA2FBE /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 20FD29522842D5A700DA2FBE /* home.json */; };
 		20FD29552842DB3600DA2FBE /* WLAnyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD29542842DB3600DA2FBE /* WLAnyComponent.swift */; };
 		20FD29592842DEBC00DA2FBE /* WLComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD29582842DEBC00DA2FBE /* WLComponentType.swift */; };
 		20FD295D2842DF9600DA2FBE /* WLServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD295C2842DF9600DA2FBE /* WLServerResponse.swift */; };
@@ -44,14 +49,19 @@
 		2046375B28428ECA00E0A7C9 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		2046375D28428FA800E0A7C9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		204FDF9228440FA400D98196 /* WLCellComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCellComponent.swift; sourceTree = "<group>"; };
+		205FE48C284BBA57009D25D7 /* WLNavigationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLNavigationAction.swift; sourceTree = "<group>"; };
 		2074F7EE284557010021FE79 /* WLAlignmentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLAlignmentStyle.swift; sourceTree = "<group>"; };
 		2074F7F02845572D0021FE79 /* WLStatusBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStatusBarStyle.swift; sourceTree = "<group>"; };
+		20900CBE284BE7A800BBD585 /* chat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
+		20900CC0284BEA5200BBD585 /* WLNavigatableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLNavigatableModifier.swift; sourceTree = "<group>"; };
+		20900CC2284BEC8F00BBD585 /* notifications.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = notifications.json; sourceTree = "<group>"; };
+		20900CC4284BECC000BBD585 /* payment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = payment.json; sourceTree = "<group>"; };
 		20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVisibleModifier.swift; sourceTree = "<group>"; };
 		20B80B02284AD3F700A13BC7 /* WLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLImageView.swift; sourceTree = "<group>"; };
 		20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVerticalSpacingComponent.swift; sourceTree = "<group>"; };
 		20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSpacingModifier.swift; sourceTree = "<group>"; };
 		20F7E5442842EC4A001F8F86 /* WLComponentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLComponentStyle.swift; sourceTree = "<group>"; };
-		20FD29522842D5A700DA2FBE /* get-home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "get-home.json"; sourceTree = "<group>"; };
+		20FD29522842D5A700DA2FBE /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		20FD29542842DB3600DA2FBE /* WLAnyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLAnyComponent.swift; sourceTree = "<group>"; };
 		20FD29582842DEBC00DA2FBE /* WLComponentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLComponentType.swift; sourceTree = "<group>"; };
 		20FD295C2842DF9600DA2FBE /* WLServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLServerResponse.swift; sourceTree = "<group>"; };
@@ -129,9 +139,18 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
+		205FE48B284BB892009D25D7 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				205FE48C284BBA57009D25D7 /* WLNavigationAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
 		20F7E5402842EB67001F8F86 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				205FE48B284BB892009D25D7 /* Actions */,
 				2046375328428D1600E0A7C9 /* Components */,
 				20F7E5412842EB7C001F8F86 /* Modifiers */,
 				20FD295A2842DEC300DA2FBE /* Models */,
@@ -144,6 +163,7 @@
 			children = (
 				20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */,
 				20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */,
+				20900CC0284BEA5200BBD585 /* WLNavigatableModifier.swift */,
 				20065C0D28450EEE00B1B30C /* WLNavigationBarModifier.swift */,
 				20B80B02284AD3F700A13BC7 /* WLImageView.swift */,
 			);
@@ -167,8 +187,11 @@
 		20FD295B2842DF5900DA2FBE /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				20FD29522842D5A700DA2FBE /* get-home.json */,
+				20FD29522842D5A700DA2FBE /* home.json */,
+				20900CBE284BE7A800BBD585 /* chat.json */,
 				20065C092845005300B1B30C /* tokens.json */,
+				20900CC2284BEC8F00BBD585 /* notifications.json */,
+				20900CC4284BECC000BBD585 /* payment.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -238,7 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2046374D28428CEC00E0A7C9 /* Preview Assets.xcassets in Resources */,
-				20FD29532842D5A700DA2FBE /* get-home.json in Resources */,
+				20900CBF284BE7A800BBD585 /* chat.json in Resources */,
+				20900CC3284BEC8F00BBD585 /* notifications.json in Resources */,
+				20900CC5284BECC000BBD585 /* payment.json in Resources */,
+				20FD29532842D5A700DA2FBE /* home.json in Resources */,
 				2046374A28428CEC00E0A7C9 /* Assets.xcassets in Resources */,
 				20065C0A2845005300B1B30C /* tokens.json in Resources */,
 			);
@@ -251,11 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205FE48D284BBA57009D25D7 /* WLNavigationAction.swift in Sources */,
 				20F7E5432842EB94001F8F86 /* WLSpacingModifier.swift in Sources */,
 				204FDF9328440FA400D98196 /* WLCellComponent.swift in Sources */,
 				2046375E28428FA800E0A7C9 /* ListViewController.swift in Sources */,
 				20B80AFF284AC3CF00A13BC7 /* WLVisibleModifier.swift in Sources */,
 				20FD295D2842DF9600DA2FBE /* WLServerResponse.swift in Sources */,
+				20900CC1284BEA5200BBD585 /* WLNavigatableModifier.swift in Sources */,
 				20F7E5452842EC4A001F8F86 /* WLComponentStyle.swift in Sources */,
 				20FD29592842DEBC00DA2FBE /* WLComponentType.swift in Sources */,
 				20D6866A284432D7006038E5 /* WLVerticalSpacingComponent.swift in Sources */,

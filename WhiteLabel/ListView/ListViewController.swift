@@ -13,8 +13,14 @@ final class ListViewController: ObservableObject {
     @Published var components: [WLComponent] = []
     @Published var navigationBar: WLNavigationBarDTO?
     
+    private let jsonName: String
+    
+    init(jsonName: String) {
+        self.jsonName = jsonName
+    }
+    
     func loadView() {
-        let response = loadLocalFile(named: "get-home")
+        let response = loadLocalFile(named: jsonName)
         components = response?.body ?? []
         navigationBar = response?.header
     }

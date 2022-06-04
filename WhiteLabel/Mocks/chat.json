@@ -1,0 +1,21 @@
+{
+    "header": {
+        "title": "Chat",
+        "titleColor": "neutralDarkPure",
+        "backgroundColor": "neutralLightPure",
+        "statusBarStyle": "dark"
+    },
+    "body": [
+        {
+            "id": "CellComponent",
+            "data": {
+                "title": "Chat",
+                "subtitle": "Minhas conversas",
+                "icon": {
+                    "name": "chat"
+                }
+            }
+        }
+    ]
+}
+
