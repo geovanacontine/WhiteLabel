@@ -13,6 +13,7 @@ struct WhiteLabelApp: App {
     
     init() {
         TokensManager.shared.setTheme(fromJson: "tokens")
+        ResourcesManager.configurePackageUI()
     }
     
     var body: some Scene {

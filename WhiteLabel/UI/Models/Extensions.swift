@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+extension Optional where Wrapped == String {
+    var isNilOrEmpty: Bool {
+        self?.isEmpty == true || self == nil
+    }
+}
+
 extension View {
     func toAny() -> AnyView {
         return AnyView(self)
