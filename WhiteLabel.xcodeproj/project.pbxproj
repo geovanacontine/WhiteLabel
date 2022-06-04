@@ -21,7 +21,7 @@
 		2074F7EF284557010021FE79 /* WLAlignmentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074F7EE284557010021FE79 /* WLAlignmentStyle.swift */; };
 		2074F7F12845572D0021FE79 /* WLStatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074F7F02845572D0021FE79 /* WLStatusBarStyle.swift */; };
 		20B80AFF284AC3CF00A13BC7 /* WLVisibleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */; };
-		20B80B03284AD3F700A13BC7 /* WLIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80B02284AD3F700A13BC7 /* WLIconView.swift */; };
+		20B80B03284AD3F700A13BC7 /* WLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80B02284AD3F700A13BC7 /* WLImageView.swift */; };
 		20D6866A284432D7006038E5 /* WLVerticalSpacingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */; };
 		20F7E5432842EB94001F8F86 /* WLSpacingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */; };
 		20F7E5452842EC4A001F8F86 /* WLComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5442842EC4A001F8F86 /* WLComponentStyle.swift */; };
@@ -47,7 +47,7 @@
 		2074F7EE284557010021FE79 /* WLAlignmentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLAlignmentStyle.swift; sourceTree = "<group>"; };
 		2074F7F02845572D0021FE79 /* WLStatusBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStatusBarStyle.swift; sourceTree = "<group>"; };
 		20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVisibleModifier.swift; sourceTree = "<group>"; };
-		20B80B02284AD3F700A13BC7 /* WLIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLIconView.swift; sourceTree = "<group>"; };
+		20B80B02284AD3F700A13BC7 /* WLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLImageView.swift; sourceTree = "<group>"; };
 		20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVerticalSpacingComponent.swift; sourceTree = "<group>"; };
 		20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSpacingModifier.swift; sourceTree = "<group>"; };
 		20F7E5442842EC4A001F8F86 /* WLComponentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLComponentStyle.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 				20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */,
 				20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */,
 				20065C0D28450EEE00B1B30C /* WLNavigationBarModifier.swift */,
-				20B80B02284AD3F700A13BC7 /* WLIconView.swift */,
+				20B80B02284AD3F700A13BC7 /* WLImageView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 				2074F7EF284557010021FE79 /* WLAlignmentStyle.swift in Sources */,
 				20065C0C28450ECB00B1B30C /* Extensions.swift in Sources */,
 				20FD29602842E45F00DA2FBE /* WLTextComponent.swift in Sources */,
-				20B80B03284AD3F700A13BC7 /* WLIconView.swift in Sources */,
+				20B80B03284AD3F700A13BC7 /* WLImageView.swift in Sources */,
 				2046375728428E6800E0A7C9 /* WLComponent.swift in Sources */,
 				20FD29552842DB3600DA2FBE /* WLAnyComponent.swift in Sources */,
 				2074F7F12845572D0021FE79 /* WLStatusBarStyle.swift in Sources */,

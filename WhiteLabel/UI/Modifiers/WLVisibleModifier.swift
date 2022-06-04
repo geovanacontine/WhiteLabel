@@ -22,7 +22,7 @@ struct VisibleModifier: ViewModifier {
 }
 
 extension View {
-    func visible(_ isVisible: Bool) -> some View {
+    func isVisible(_ isVisible: Bool) -> some View {
         modifier(VisibleModifier(isVisible: isVisible))
     }
 }

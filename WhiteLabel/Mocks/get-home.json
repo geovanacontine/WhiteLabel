@@ -1,21 +1,25 @@
 {
     "header": {
-        "title": "Julio John App",
-        "titleColor": "neutralLightPure",
-        "backgroundColor": "neutralDarkPure",
-        "statusBarStyle": "light"
+        "title": "White Label",
+        "titleColor": "neutralDarkPure",
+        "backgroundColor": "neutralLightPure",
+        "statusBarStyle": "dark"
     },
     "body": [
         {
             "id": "TextComponent",
             "data": {
-                "text": "Pedro Contine",
-                "font": "heading3"
+                "text": "Geovana Contine",
+                "font": "heading3",
+                "icon": {
+                    "url": "https://randomuser.me/api/portraits/women/0.jpg",
+                    "size": "icon_xl"
+                }
             },
             "style": {
                 "bounds": {
                     "top": "sm",
-                    "bottom": "sm"
+                    "bottom": "lg"
                 }
             }
         },

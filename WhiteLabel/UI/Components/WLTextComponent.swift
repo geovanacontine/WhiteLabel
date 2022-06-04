@@ -21,6 +21,7 @@ struct WLTextComponent: WLComponent {
 struct WLTextDTO: Decodable {
     let text: String?
     let font: String?
+    let icon: WLImageDTO?
 }
 
 struct WLTextView: View {
@@ -32,8 +33,16 @@ struct WLTextView: View {
     }
     
     var body: some View {
-        TrecoText(dto?.text ?? "")
-            .textStyle(FontStyle(fromRawValue: dto?.font ?? ""))
-            .applySpacing(style?.bounds)
+        HStack {
+            HStack {
+                WLImageView(dto: dto?.icon)
+                Spacer()
+                    .frame(width: Spacing.xs.value)
+            }
+            .isVisible(dto?.icon != nil)
+            TrecoText(dto?.text ?? "")
+                .textStyle(FontStyle(fromRawValue: dto?.font ?? ""))
+        }
+        .applySpacing(style?.bounds)
     }
 }

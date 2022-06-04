@@ -22,7 +22,7 @@ struct WLCellDTO: Decodable {
     let title: String?
     let subtitle: String?
     let value: String?
-    let icon: WLIconDTO?
+    let icon: WLImageDTO?
     let hasSeparator: Bool?
     let hasDisclosure: Bool?
 }
@@ -35,35 +35,40 @@ struct WLCellView: View {
         VStack {
             HStack {
                 HStack {
-                    WLIconView(dto: dto?.icon)
+                    WLImageView(dto: dto?.icon)
                     Spacer()
-                        .frame(width: 12)
+                        .frame(width: Spacing.xs.value)
                 }
-                .visible(dto?.icon != nil)
+                .isVisible(dto?.icon != nil)
                 VStack(alignment: .leading) {
                     TrecoText(dto?.title ?? "")
                         .textStyle(.paragraph)
                     TrecoText(dto?.subtitle ?? "")
                         .textStyle(.description)
-                        .visible(dto?.subtitle.isNilOrEmpty == false)
+                        .isVisible(dto?.subtitle.isNilOrEmpty == false)
                 }
                 Spacer()
                 TrecoText(dto?.value ?? "")
                     .textStyle(.description)
-                if dto?.hasDisclosure ?? true {
+                HStack {
                     Spacer()
-                        .frame(width: 12)
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(Color.treco(.neutralDark3))
+                        .frame(width: Spacing.xs.value)
+                    WLImageView(name: "chevron",
+                                size: .iconSM,
+                                tintColor: .neutralDark2)
                 }
+                .isVisible(dto?.hasDisclosure ?? true)
             }
-            if dto?.hasSeparator ?? true {
+            VStack {
+                Spacer()
+                    .frame(height: Spacing.xs.value)
                 Rectangle()
                     .fill(.quaternary)
                     .frame(height: 1)
-                Spacer()
-                    .frame(height: Spacing.xs.value)
             }
+            .isVisible(dto?.hasSeparator ?? true)
+            Spacer()
+                .frame(height: Spacing.xs.value)
         }
         .applySpacing(style?.bounds)
     }
@@ -75,8 +80,12 @@ struct WLCellView_Previews: PreviewProvider {
                               subtitle: "Subtitle",
                               value: "Value",
                               icon: .init(name: "bell",
-                                          type: nil,
-                                          color: nil),
+                                          size: nil,
+                                          url: nil,
+                                          width: nil,
+                                          height: nil,
+                                          border: nil,
+                                          tintColor: nil),
                               hasSeparator: true,
                               hasDisclosure: true),
                    style: nil)
