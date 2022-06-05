@@ -76,7 +76,7 @@ struct WLCellView: View {
             .applyNavigation(actions?.onTap)
             
             Rectangle()
-                .fill(Color.treco(.neutralDark3))
+                .fill(Color.treco(.neutralLight2))
                 .frame(height: 1)
                 .isVisible(dto?.hasSeparator ?? true)
         }
