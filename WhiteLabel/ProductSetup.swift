@@ -40,6 +40,11 @@ struct ProductSetup {
         return .treco(.init(fromRawValue: token))
     }
     
+    static var hasNavigationBarShadow: Bool {
+        let token = TokensManager.shared.getValue("navigationBar_hasShadow") ?? "false"
+        return Bool(token) ?? false
+    }
+    
     static var shouldDelayRequests: Bool {
         let token = TokensManager.shared.getValue("network_shouldDelayRequests") ?? "false"
         return Bool(token) ?? false

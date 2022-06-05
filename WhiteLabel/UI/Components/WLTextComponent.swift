@@ -21,6 +21,7 @@ struct WLTextComponent: WLComponent {
 struct WLTextDTO: Decodable {
     let text: String?
     let font: String?
+    let color: String?
     let icon: WLImageDTO?
 }
 
@@ -32,6 +33,18 @@ struct WLTextView: View {
         .init(rawValue: style?.bounds?.alignment ?? "") ?? .left
     }
     
+    private var font: FontStyle {
+        .init(fromRawValue: dto?.font ?? "")
+    }
+    
+    private var color: Color? {
+        guard let color = dto?.color else {
+            return nil
+        }
+        
+        return .treco(.init(fromRawValue: color))
+    }
+    
     var body: some View {
         HStack {
             HStack {
@@ -41,7 +54,7 @@ struct WLTextView: View {
             }
             .isVisible(dto?.icon != nil)
             TrecoText(dto?.text ?? "")
-                .textStyle(FontStyle(fromRawValue: dto?.font ?? ""))
+                .textStyle(font, color: color)
         }
         .applySpacing(style?.bounds)
     }

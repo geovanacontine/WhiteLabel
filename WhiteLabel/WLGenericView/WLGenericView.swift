@@ -17,14 +17,21 @@ struct WLGenericView: View {
     }
     
     var body: some View {
-        Group {
-            if controller.isLoading {
-                WLLoadingView()
-            } else {
-                ScrollView(.vertical) {
-                    LazyVStack {
-                        ForEach(controller.components, id: \.id) { component in
-                            component.render()
+        VStack(spacing: 0) {
+            Rectangle()
+                .fill(Color.treco(.neutralLightPure))
+                .frame(height: 1)
+                .addShadow(.level1, color: .neutralDark3)
+                .isVisible(ProductSetup.hasNavigationBarShadow)
+            Group {
+                if controller.isLoading {
+                    WLLoadingView()
+                } else {
+                    ScrollView(.vertical) {
+                        LazyVStack {
+                            ForEach(controller.components, id: \.id) { component in
+                                component.render()
+                            }
                         }
                     }
                 }

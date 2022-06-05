@@ -1,6 +1,6 @@
 {
     "header": {
-        "title": "Debug"
+        "title": "White Label"
     },
     "body": [
         {
@@ -8,6 +8,7 @@
             "data": {
                 "text": "Geovana Contine",
                 "font": "heading3",
+                "color": "brandPure",
                 "icon": {
                     "url": "https://randomuser.me/api/portraits/women/0.jpg",
                     "size": "icon_xl"
