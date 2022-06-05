@@ -12,7 +12,7 @@ import Treco
 struct WhiteLabelApp: App {
     
     init() {
-        ProductSetup.setupDesignSystem()
+        WLProductSettings.shared.setupDesignSystem()
     }
     
     var body: some Scene {
@@ -21,7 +21,7 @@ struct WhiteLabelApp: App {
                 WLGenericView(viewName: "home")
                     .preferredColorScheme(.light)
                     .onAppear {
-                        ProductSetup.setupNavigationBar()
+                        WLProductSettings.shared.setupNavigationBar()
                     }
             }
             .accentColor(.treco(.brandPure))

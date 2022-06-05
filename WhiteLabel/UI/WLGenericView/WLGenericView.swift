@@ -11,9 +11,13 @@ import Treco
 struct WLGenericView: View {
     
     @ObservedObject var controller: WLGenericViewController
+    private let productSettings: WLProductSettings
     
-    init(viewName: String) {
+    init(viewName: String,
+         productSettings: WLProductSettings = WLProductSettings.shared) {
+        
         self.controller = WLGenericViewController(viewName: viewName)
+        self.productSettings = productSettings
     }
     
     var body: some View {
@@ -22,7 +26,7 @@ struct WLGenericView: View {
                 .fill(Color.treco(.neutralLightPure))
                 .frame(height: 1)
                 .addShadow(.level1, color: .neutralDark3)
-                .isVisible(ProductSetup.hasNavigationBarShadow)
+                .isVisible(productSettings.hasNavigationBarShadow)
             Group {
                 if controller.isLoading {
                     WLLoadingView()
@@ -46,7 +50,7 @@ struct WLGenericView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 TrecoText(controller.navigationBar?.title ?? "")
-                    .textStyle(.heading4, color: ProductSetup.navigationTitleColor)
+                    .textStyle(.heading4, color: productSettings.navigationTitleColor)
                     .frame(minWidth: 200)
             }
         }
