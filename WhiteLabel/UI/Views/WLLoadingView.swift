@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import Treco
 
 struct WLLoadingView: View {
     var body: some View {
         Spacer()
         ProgressView()
+            .tint(.treco(.brandPure))
         Spacer()
     }
 }

@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+import Treco
 
 struct WLGenericView: View {
     
-    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @ObservedObject var controller: WLGenericViewController
     
     init(viewName: String) {
@@ -30,30 +30,18 @@ struct WLGenericView: View {
                 }
             }
         }
-        .navigationTitle(controller.navigationBar?.title ?? "")
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                if controller.isRootView() {
-                    EmptyView()
-                } else {
-                    Button {
-                        didTapBackButton()
-                    } label: {
-                        Image(systemName: "chevron.left")
-//                            .foregroundColor(Color.init(tintColor))
-//                            .padding(Spacing.xxs.value)
-                    }
-                }
-            }
-        }
+        .navigationTitle("")
+        .navigationBarBackButtonHidden(controller.isRootView())
         .onAppear(perform: {
             controller.loadView()
         })
-    }
-    
-    private func didTapBackButton() {
-        mode.wrappedValue.dismiss()
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                TrecoText(controller.navigationBar?.title ?? "")
+                    .textStyle(.heading4, color: ProductSetup.navigationTitleColor)
+                    .frame(minWidth: 200)
+            }
+        }
     }
 }

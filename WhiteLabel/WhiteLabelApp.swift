@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Treco
 
 @main
 struct WhiteLabelApp: App {
@@ -23,6 +24,7 @@ struct WhiteLabelApp: App {
                         ProductSetup.setupNavigationBar()
                     }
             }
+            .accentColor(.treco(.brandPure))
         }
     }
 }

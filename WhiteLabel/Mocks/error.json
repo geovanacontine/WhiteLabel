@@ -1,9 +1,6 @@
 {
     "header": {
-        "title": "White Label",
-        "titleColor": "neutralDarkPure",
-        "backgroundColor": "neutralLightPure",
-        "statusBarStyle": "dark"
+        "title": "White Label"
     },
     "body": [
         {

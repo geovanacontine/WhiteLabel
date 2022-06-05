@@ -23,6 +23,10 @@ final class WLGenericViewController: ObservableObject {
     }
     
     func loadView() {
+        guard components.isEmpty else {
+            return
+        }
+        
         isLoading = true
         components = []
         navigationBar = nil
@@ -30,10 +34,6 @@ final class WLGenericViewController: ObservableObject {
         requestView() { [weak self] response in
             self?.handleResponse(response)
         }
-    }
-    
-    func hasNavigationBar() -> Bool {
-        navigationBar != nil
     }
     
     func isRootView() -> Bool {
@@ -62,7 +62,7 @@ extension WLGenericViewController {
     }
     
     private func requestView(completion: @escaping (WLServerResponse?) -> Void) {
-        if ProductSettings.shared.shouldDelayRequests {
+        if ProductSetup.shouldDelayRequests {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
                 completion(self?.loadLocalFile(named: self?.viewName ?? ""))
             }

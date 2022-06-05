@@ -1,9 +1,6 @@
 {
     "header": {
-        "title": "Chat",
-        "titleColor": "neutralLightPure",
-        "backgroundColor": "neutralDarkPure",
-        "statusBarStyle": "light"
+        "title": "Chat"
     },
     "body": [
         {

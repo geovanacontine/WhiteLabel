@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "20DBB722284C0423000FBA53"
-               BuildableName = "Production.app"
-               BlueprintName = "Production"
+               BuildableName = "VoiceApp.app"
+               BlueprintName = "VoiceApp"
                ReferencedContainer = "container:WhiteLabel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20DBB722284C0423000FBA53"
-            BuildableName = "Production.app"
-            BlueprintName = "Production"
+            BuildableName = "VoiceApp.app"
+            BlueprintName = "VoiceApp"
             ReferencedContainer = "container:WhiteLabel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20DBB722284C0423000FBA53"
-            BuildableName = "Production.app"
-            BlueprintName = "Production"
+            BuildableName = "VoiceApp.app"
+            BlueprintName = "VoiceApp"
             ReferencedContainer = "container:WhiteLabel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

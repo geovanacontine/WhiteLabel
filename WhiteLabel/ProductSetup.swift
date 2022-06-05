@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 import Treco
 
 struct ProductSetup {
@@ -15,10 +16,14 @@ struct ProductSetup {
     }
     
     static func setupNavigationBar() {
-        let dto = ProductSettings.shared.navigationBarAppearance
-        let barStyle = WLStatusBarStyle(rawValue: dto.statusBarStyle ?? "") ?? .light
-        let backgroundColor = UIColor.treco(.init(fromRawValue: dto.backgroundColor ?? ""))
-        let tintColor = UIColor.treco(.init(fromRawValue: dto.titleColor ?? ""))
+        let manager = TokensManager.shared
+        let styleToken = manager.getValue("navigationBar_statusBarStyle") ?? "dark"
+        let backgroundToken = manager.getValue("navigationBar_backgroundColor") ?? "neutralLightPure"
+        let tintColorToken = manager.getValue("navigationBar_titleColor") ?? "neutralDarkPure"
+        
+        let barStyle = WLStatusBarStyle(rawValue: styleToken) ?? .light
+        let backgroundColor = UIColor.treco(.init(fromRawValue: backgroundToken))
+        let tintColor = UIColor.treco(.init(fromRawValue: tintColorToken))
         
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = backgroundColor
@@ -28,5 +33,15 @@ struct ProductSetup {
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UIApplication.shared.statusBarStyle = barStyle.systemStyle
+    }
+    
+    static var navigationTitleColor: Color {
+        let token = TokensManager.shared.getValue("navigationBar_titleColor") ?? "neutralDarkPure"
+        return .treco(.init(fromRawValue: token))
+    }
+    
+    static var shouldDelayRequests: Bool {
+        let token = TokensManager.shared.getValue("network_shouldDelayRequests") ?? "false"
+        return Bool(token) ?? false
     }
 }

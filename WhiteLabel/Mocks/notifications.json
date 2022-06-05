@@ -1,9 +1,6 @@
 {
     "header": {
-        "title": "Notifications",
-        "titleColor": "neutralDarkPure",
-        "backgroundColor": "neutralLightPure",
-        "statusBarStyle": "dark"
+        "title": "Notifications"
     },
     "body": [
         
