@@ -7,6 +7,16 @@
 
 import Foundation
 
-struct ProductSettings {
-    static let shouldDelayRequests = false
+final class ProductSettings {
+    
+    static let shared = ProductSettings()
+    
+    private(set) var shouldDelayRequests = false
+    private(set) var navigationBarAppearance: WLNavigationBarAppearance
+    
+    private init() {
+        navigationBarAppearance = .init(titleColor: "neutralDarkPure",
+                                        backgroundColor: "neutralLightPure",
+                                        statusBarStyle: "dark")
+    }
 }

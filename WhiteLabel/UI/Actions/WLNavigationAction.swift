@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct WLNavigationAction: Decodable {
+    
     let view: String
     
     func destination() -> AnyView {
-        GenericView(viewName: view).toAny()
+        WLGenericView(viewName: view).toAny()
     }
 }
 
@@ -19,7 +20,11 @@ struct NavigatableModifier: ViewModifier {
     
     @State private var isShowingSubview = false
     let navigationAction: WLNavigationAction?
-
+    
+    private var destination: AnyView {
+        navigationAction?.destination() ?? EmptyView().toAny()
+    }
+    
     func body(content: Content) -> some View {
         if navigationAction == nil {
             content
@@ -28,8 +33,7 @@ struct NavigatableModifier: ViewModifier {
                 isShowingSubview = true
             } label: {
                 VStack {
-                    NavigationLink(destination: navigationAction?.destination() ?? EmptyView().toAny(),
-                                   isActive: $isShowingSubview) { EmptyView() }
+                    NavigationLink(destination: destination, isActive: $isShowingSubview) { EmptyView() }
                     content
                 }
             }

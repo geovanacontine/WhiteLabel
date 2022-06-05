@@ -6,20 +6,23 @@
 //
 
 import SwiftUI
-import Treco
 
 @main
 struct WhiteLabelApp: App {
     
     init() {
-        TokensManager.shared.setTheme(fromJson: "tokens")
-        ResourcesManager.configurePackageUI()
+        ProductSetup.setupDesignSystem()
     }
     
     var body: some Scene {
         WindowGroup {
-            GenericView(viewName: "home")
-                .preferredColorScheme(.light)
+            NavigationView {
+                WLGenericView(viewName: "home")
+                    .preferredColorScheme(.light)
+                    .onAppear {
+                        ProductSetup.setupNavigationBar()
+                    }
+            }
         }
     }
 }

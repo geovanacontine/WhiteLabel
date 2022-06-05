@@ -9,12 +9,12 @@ import Foundation
 
 struct WLServerResponse: Decodable {
     let body: [WLComponent]
-    let header: WLNavigationBarDTO?
+    let header: WLNavigationBar?
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.body = try container.decode([WLAnyComponent].self, forKey: .body).compactMap { $0.component }
-        self.header = try? container.decode(WLNavigationBarDTO.self, forKey: .header)
+        self.header = try? container.decode(WLNavigationBar.self, forKey: .header)
     }
 }
 

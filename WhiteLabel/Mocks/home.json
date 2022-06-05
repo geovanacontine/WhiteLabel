@@ -1,9 +1,6 @@
 {
     "header": {
-        "title": "Debug",
-        "titleColor": "neutralDarkPure",
-        "backgroundColor": "neutralLightPure",
-        "statusBarStyle": "dark"
+        "title": "Debug"
     },
     "body": [
         {
