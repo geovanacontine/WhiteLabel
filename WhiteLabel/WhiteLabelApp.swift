@@ -18,7 +18,7 @@ struct WhiteLabelApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                WLGenericView(viewName: "home")
+                WLGenericView(viewName: WLLocalView.home.rawValue)
                     .preferredColorScheme(.light)
                     .onAppear {
                         WLProductSettings.shared.setupNavigationBar()

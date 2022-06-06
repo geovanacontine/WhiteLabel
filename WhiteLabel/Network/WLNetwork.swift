@@ -63,6 +63,6 @@ extension WLNetwork {
     }
     
     func getLocalErrorView() -> WLServerView {
-        getLocalView(named: "error") ?? .init(body: [], header: nil)
+        getLocalView(named: WLLocalView.genericError.rawValue) ?? .init(body: [], header: nil)
     }
 }

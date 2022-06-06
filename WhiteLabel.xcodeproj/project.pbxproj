@@ -17,7 +17,6 @@
 		20323325284D6B170074F366 /* WLNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20323323284D6B170074F366 /* WLNetwork.swift */; };
 		20323326284D73410074F366 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CBE284BE7A800BBD585 /* chat.json */; };
 		2046374628428CEA00E0A7C9 /* WhiteLabelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046374528428CEA00E0A7C9 /* WhiteLabelApp.swift */; };
-		2046374A28428CEC00E0A7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374928428CEC00E0A7C9 /* Assets.xcassets */; };
 		2046374D28428CEC00E0A7C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374C28428CEC00E0A7C9 /* Preview Assets.xcassets */; };
 		2046375728428E6800E0A7C9 /* WLComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046375628428E6800E0A7C9 /* WLComponent.swift */; };
 		2046375C28428ECA00E0A7C9 /* WLGenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046375B28428ECA00E0A7C9 /* WLGenericView.swift */; };
@@ -34,10 +33,13 @@
 		20900CC5284BECC000BBD585 /* payment.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CC4284BECC000BBD585 /* payment.json */; };
 		20B80AFF284AC3CF00A13BC7 /* WLVisibleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */; };
 		20B80B03284AD3F700A13BC7 /* WLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80B02284AD3F700A13BC7 /* WLImageView.swift */; };
-		20BAB6E0284C07DA00A81B59 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 20FD29522842D5A700DA2FBE /* home.json */; };
 		20BAB6E7284C0DB400A81B59 /* WLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BAB6E6284C0DB400A81B59 /* WLLoadingView.swift */; };
 		20BAB6E8284C0DC700A81B59 /* WLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BAB6E6284C0DB400A81B59 /* WLLoadingView.swift */; };
-		20BAB6F0284C128C00A81B59 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 20BAB6EF284C128C00A81B59 /* error.json */; };
+		20BAB6F0284C128C00A81B59 /* genericError.json in Resources */ = {isa = PBXBuildFile; fileRef = 20BAB6EF284C128C00A81B59 /* genericError.json */; };
+		20BADBBA284E32F500AD9583 /* WLLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BADBB9284E32F500AD9583 /* WLLocalView.swift */; };
+		20BADBBB284E32F500AD9583 /* WLLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BADBB9284E32F500AD9583 /* WLLocalView.swift */; };
+		20BADBBE284E36D300AD9583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374928428CEC00E0A7C9 /* Assets.xcassets */; };
+		20BADBBF284E36DA00AD9583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374928428CEC00E0A7C9 /* Assets.xcassets */; };
 		20D6866A284432D7006038E5 /* WLVerticalSpacingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */; };
 		20DBB726284C0423000FBA53 /* WLNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FE48C284BBA57009D25D7 /* WLNavigationAction.swift */; };
 		20DBB727284C0423000FBA53 /* WLSpacingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */; };
@@ -59,11 +61,7 @@
 		20DBB738284C0423000FBA53 /* WhiteLabelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046374528428CEA00E0A7C9 /* WhiteLabelApp.swift */; };
 		20DBB73A284C0423000FBA53 /* Treco in Frameworks */ = {isa = PBXBuildFile; productRef = 20DBB723284C0423000FBA53 /* Treco */; };
 		20DBB73C284C0423000FBA53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374C28428CEC00E0A7C9 /* Preview Assets.xcassets */; };
-		20DBB73D284C0423000FBA53 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CBE284BE7A800BBD585 /* chat.json */; };
-		20DBB73E284C0423000FBA53 /* notifications.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CC2284BEC8F00BBD585 /* notifications.json */; };
-		20DBB73F284C0423000FBA53 /* payment.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CC4284BECC000BBD585 /* payment.json */; };
-		20DBB741284C0423000FBA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374928428CEC00E0A7C9 /* Assets.xcassets */; };
-		20EAF0B1284D291E0099DE17 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 20BAB6EF284C128C00A81B59 /* error.json */; };
+		20EAF0B1284D291E0099DE17 /* genericError.json in Resources */ = {isa = PBXBuildFile; fileRef = 20BAB6EF284C128C00A81B59 /* genericError.json */; };
 		20F7E5432842EB94001F8F86 /* WLSpacingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */; };
 		20F7E5452842EC4A001F8F86 /* WLComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5442842EC4A001F8F86 /* WLComponentStyle.swift */; };
 		20FD29532842D5A700DA2FBE /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 20FD29522842D5A700DA2FBE /* home.json */; };
@@ -98,7 +96,8 @@
 		20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVisibleModifier.swift; sourceTree = "<group>"; };
 		20B80B02284AD3F700A13BC7 /* WLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLImageView.swift; sourceTree = "<group>"; };
 		20BAB6E6284C0DB400A81B59 /* WLLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLoadingView.swift; sourceTree = "<group>"; };
-		20BAB6EF284C128C00A81B59 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		20BAB6EF284C128C00A81B59 /* genericError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genericError.json; sourceTree = "<group>"; };
+		20BADBB9284E32F500AD9583 /* WLLocalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLocalView.swift; sourceTree = "<group>"; };
 		20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVerticalSpacingComponent.swift; sourceTree = "<group>"; };
 		20DBB746284C0423000FBA53 /* VoiceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSpacingModifier.swift; sourceTree = "<group>"; };
@@ -136,6 +135,7 @@
 			children = (
 				2024D9D7284D1C4E0045F451 /* Development */,
 				2024D9D8284D1C580045F451 /* VoiceApp */,
+				20FD295B2842DF5900DA2FBE /* SharedViews */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -144,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				20065C092845005300B1B30C /* tokens.json */,
+				20FD29522842D5A700DA2FBE /* home.json */,
+				20900CC2284BEC8F00BBD585 /* notifications.json */,
+				20900CBE284BE7A800BBD585 /* chat.json */,
+				20900CC4284BECC000BBD585 /* payment.json */,
 			);
 			path = Development;
 			sourceTree = "<group>";
@@ -160,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				20323323284D6B170074F366 /* WLNetwork.swift */,
-				20FD295B2842DF5900DA2FBE /* Mocks */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 		20FD295A2842DEC300DA2FBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				20BADBB9284E32F500AD9583 /* WLLocalView.swift */,
 				2046375628428E6800E0A7C9 /* WLComponent.swift */,
 				20FD29542842DB3600DA2FBE /* WLAnyComponent.swift */,
 				20FD295C2842DF9600DA2FBE /* WLServerView.swift */,
@@ -280,16 +284,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		20FD295B2842DF5900DA2FBE /* Mocks */ = {
+		20FD295B2842DF5900DA2FBE /* SharedViews */ = {
 			isa = PBXGroup;
 			children = (
-				20FD29522842D5A700DA2FBE /* home.json */,
-				20BAB6EF284C128C00A81B59 /* error.json */,
-				20900CBE284BE7A800BBD585 /* chat.json */,
-				20900CC2284BEC8F00BBD585 /* notifications.json */,
-				20900CC4284BECC000BBD585 /* payment.json */,
+				20BAB6EF284C128C00A81B59 /* genericError.json */,
 			);
-			path = Mocks;
+			path = SharedViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,9 +381,9 @@
 				20323326284D73410074F366 /* chat.json in Resources */,
 				20900CC3284BEC8F00BBD585 /* notifications.json in Resources */,
 				20900CC5284BECC000BBD585 /* payment.json in Resources */,
-				20EAF0B1284D291E0099DE17 /* error.json in Resources */,
+				20EAF0B1284D291E0099DE17 /* genericError.json in Resources */,
 				20FD29532842D5A700DA2FBE /* home.json in Resources */,
-				2046374A28428CEC00E0A7C9 /* Assets.xcassets in Resources */,
+				20BADBBE284E36D300AD9583 /* Assets.xcassets in Resources */,
 				20065C0A2845005300B1B30C /* tokens.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,12 +394,8 @@
 			files = (
 				20DBB73C284C0423000FBA53 /* Preview Assets.xcassets in Resources */,
 				2024D9D4284D18930045F451 /* tokens.json in Resources */,
-				20DBB73D284C0423000FBA53 /* chat.json in Resources */,
-				20BAB6E0284C07DA00A81B59 /* home.json in Resources */,
-				20BAB6F0284C128C00A81B59 /* error.json in Resources */,
-				20DBB73E284C0423000FBA53 /* notifications.json in Resources */,
-				20DBB73F284C0423000FBA53 /* payment.json in Resources */,
-				20DBB741284C0423000FBA53 /* Assets.xcassets in Resources */,
+				20BADBBF284E36DA00AD9583 /* Assets.xcassets in Resources */,
+				20BAB6F0284C128C00A81B59 /* genericError.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +419,7 @@
 				20FD29592842DEBC00DA2FBE /* WLComponentType.swift in Sources */,
 				20D6866A284432D7006038E5 /* WLVerticalSpacingComponent.swift in Sources */,
 				20BAB6E8284C0DC700A81B59 /* WLLoadingView.swift in Sources */,
+				20BADBBA284E32F500AD9583 /* WLLocalView.swift in Sources */,
 				2046375C28428ECA00E0A7C9 /* WLGenericView.swift in Sources */,
 				2074F7EF284557010021FE79 /* WLAlignmentStyle.swift in Sources */,
 				20065C0C28450ECB00B1B30C /* Extensions.swift in Sources */,
@@ -453,6 +450,7 @@
 				20DBB72D284C0423000FBA53 /* WLComponentType.swift in Sources */,
 				20DBB72E284C0423000FBA53 /* WLVerticalSpacingComponent.swift in Sources */,
 				20BAB6E7284C0DB400A81B59 /* WLLoadingView.swift in Sources */,
+				20BADBBB284E32F500AD9583 /* WLLocalView.swift in Sources */,
 				20DBB730284C0423000FBA53 /* WLGenericView.swift in Sources */,
 				20DBB731284C0423000FBA53 /* WLAlignmentStyle.swift in Sources */,
 				20DBB732284C0423000FBA53 /* Extensions.swift in Sources */,
@@ -588,7 +586,7 @@
 		2046375128428CEC00E0A7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -620,7 +618,7 @@
 		2046375228428CEC00E0A7C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -652,7 +650,7 @@
 		20DBB744284C0423000FBA53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-VoiceApp";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -684,7 +682,7 @@
 		20DBB745284C0423000FBA53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-VoiceApp";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

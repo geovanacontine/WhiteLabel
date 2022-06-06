@@ -39,6 +39,6 @@ final class WLGenericViewController: ObservableObject {
     }
     
     func isRootView() -> Bool {
-        viewName == "home"
+        viewName == WLLocalView.home.rawValue
     }
 }
