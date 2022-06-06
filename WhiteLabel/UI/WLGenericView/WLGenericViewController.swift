@@ -12,8 +12,7 @@ import UIKit
 
 final class WLGenericViewController: ObservableObject {
     
-    @Published var components: [WLComponent] = []
-    @Published var navigationBar: WLNavigationBar?
+    @Published var view: WLServerView?
     @Published var isLoading = false
     
     private let network: WLNetworkProtocol
@@ -25,15 +24,14 @@ final class WLGenericViewController: ObservableObject {
     }
     
     func loadView() {
-        guard components.isEmpty else {
+        guard view == nil else {
             return
         }
         
         isLoading = true
         
         network.getView(named: viewName) { [weak self] view in
-            self?.components = view.body
-            self?.navigationBar = view.header
+            self?.view = view
             self?.isLoading = false
         }
     }

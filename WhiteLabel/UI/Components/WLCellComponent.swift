@@ -9,7 +9,7 @@ import SwiftUI
 import Treco
 
 struct WLCellComponent: WLComponent {
-    let id = UUID().uuidString
+    let tag: String?
     let data: WLCellDTO?
     let style: WLComponentStyle?
     let actions: WLCellActions?

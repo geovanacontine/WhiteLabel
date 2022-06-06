@@ -31,9 +31,9 @@ struct WLGenericView: View {
                 if controller.isLoading {
                     WLLoadingView()
                 } else {
-                    ScrollView(.vertical) {
+                    ScrollView(scrollAxes) {
                         LazyVStack {
-                            ForEach(controller.components, id: \.id) { component in
+                            ForEach(controller.view?.body ?? [], id: \.tag) { component in
                                 component.render()
                             }
                         }
@@ -49,10 +49,15 @@ struct WLGenericView: View {
         })
         .toolbar {
             ToolbarItem(placement: .principal) {
-                TrecoText(controller.navigationBar?.title ?? "")
+                TrecoText(controller.view?.header?.title ?? "")
                     .textStyle(.heading4, color: productSettings.navigationTitleColor)
                     .frame(minWidth: 200)
             }
         }
+    }
+    
+    private var scrollAxes: Axis.Set {
+        let canScroll = controller.view?.settings?.canScroll ?? true
+        return canScroll ? .vertical : []
     }
 }

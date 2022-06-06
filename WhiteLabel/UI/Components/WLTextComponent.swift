@@ -9,7 +9,7 @@ import SwiftUI
 import Treco
 
 struct WLTextComponent: WLComponent {
-    let id = UUID().uuidString
+    let tag: String?
     let data: WLTextDTO?
     let style: WLComponentStyle?
     

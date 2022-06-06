@@ -5,6 +5,7 @@
     "body": [
         {
             "id": "TextComponent",
+            "tag": "profileName",
             "data": {
                 "text": "Geovana Contine",
                 "font": "heading3",
@@ -23,6 +24,7 @@
         },
         {
             "id": "CellComponent",
+            "tag": "chatCell",
             "data": {
                 "title": "Chat",
                 "subtitle": "Minhas conversas",
@@ -38,32 +40,18 @@
         },
         {
             "id": "CellComponent",
+            "tag": "notificationsCell",
             "data": {
                 "title": "Notificações",
                 "subtitle": "Minha central de notificações",
                 "icon": {
                     "name": "bell"
-                }
-            },
-            "actions": {
-                "onTap": {
-                    "view": "notifications"
-                }
-            }
-        },
-        {
-            "id": "CellComponent",
-            "data": {
-                "title": "Pagamentos",
-                "subtitle": "Meus saldos e cartões",
-                "icon": {
-                    "name": "creditCard"
                 },
                 "hasSeparator": false
             },
             "actions": {
                 "onTap": {
-                    "view": "payment"
+                    "view": "notifications"
                 }
             }
         }

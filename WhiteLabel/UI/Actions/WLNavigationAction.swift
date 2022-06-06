@@ -6,13 +6,21 @@
 //
 
 import SwiftUI
+import Treco
 
 struct WLNavigationAction: Decodable {
     
     let view: String
+    let isModal: Bool?
     
     func destination() -> AnyView {
-        WLGenericView(viewName: view).toAny()
+        if isModal ?? false {
+            return NavigationView { WLGenericView(viewName: view) }
+            .accentColor(.treco(.brandPure))
+            .toAny()
+        } else {
+            return WLGenericView(viewName: view).toAny()
+        }
     }
 }
 
@@ -25,6 +33,10 @@ struct NavigatableModifier: ViewModifier {
         navigationAction?.destination() ?? EmptyView().toAny()
     }
     
+    private var isModal: Bool {
+        navigationAction?.isModal ?? false
+    }
+    
     func body(content: Content) -> some View {
         if navigationAction == nil {
             content
@@ -33,8 +45,13 @@ struct NavigatableModifier: ViewModifier {
                 isShowingSubview = true
             } label: {
                 VStack {
-                    NavigationLink(destination: destination, isActive: $isShowingSubview) { EmptyView() }
-                    content
+                    if isModal {
+                        content
+                            .sheet(isPresented: $isShowingSubview) { destination }
+                    } else {
+                        NavigationLink(destination: destination, isActive: $isShowingSubview) { EmptyView() }
+                        content
+                    }
                 }
             }
         }

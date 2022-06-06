@@ -16,6 +16,8 @@
 		20323324284D6B170074F366 /* WLNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20323323284D6B170074F366 /* WLNetwork.swift */; };
 		20323325284D6B170074F366 /* WLNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20323323284D6B170074F366 /* WLNetwork.swift */; };
 		20323326284D73410074F366 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CBE284BE7A800BBD585 /* chat.json */; };
+		203CE199284E8EB0007B2D7F /* WLViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203CE198284E8EB0007B2D7F /* WLViewSettings.swift */; };
+		203CE19A284E8EB0007B2D7F /* WLViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203CE198284E8EB0007B2D7F /* WLViewSettings.swift */; };
 		2046374628428CEA00E0A7C9 /* WhiteLabelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046374528428CEA00E0A7C9 /* WhiteLabelApp.swift */; };
 		2046374D28428CEC00E0A7C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374C28428CEC00E0A7C9 /* Preview Assets.xcassets */; };
 		2046375728428E6800E0A7C9 /* WLComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046375628428E6800E0A7C9 /* WLComponent.swift */; };
@@ -77,6 +79,7 @@
 		2024D9D3284D18930045F451 /* tokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tokens.json; sourceTree = "<group>"; };
 		2032331F284D699D0074F366 /* WLEnvironmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLEnvironmentType.swift; sourceTree = "<group>"; };
 		20323323284D6B170074F366 /* WLNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLNetwork.swift; sourceTree = "<group>"; };
+		203CE198284E8EB0007B2D7F /* WLViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLViewSettings.swift; sourceTree = "<group>"; };
 		2046374228428CEA00E0A7C9 /* Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Development.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2046374528428CEA00E0A7C9 /* WhiteLabelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteLabelApp.swift; sourceTree = "<group>"; };
 		2046374928428CEC00E0A7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				20323323284D6B170074F366 /* WLNetwork.swift */,
+				2032331F284D699D0074F366 /* WLEnvironmentType.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -270,15 +274,15 @@
 		20FD295A2842DEC300DA2FBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				20BADBB9284E32F500AD9583 /* WLLocalView.swift */,
+				20FD295C2842DF9600DA2FBE /* WLServerView.swift */,
+				20706C20284D0ABF00236DF9 /* WLNavigationBar.swift */,
+				203CE198284E8EB0007B2D7F /* WLViewSettings.swift */,
 				2046375628428E6800E0A7C9 /* WLComponent.swift */,
 				20FD29542842DB3600DA2FBE /* WLAnyComponent.swift */,
-				20FD295C2842DF9600DA2FBE /* WLServerView.swift */,
+				20BADBB9284E32F500AD9583 /* WLLocalView.swift */,
 				20F7E5442842EC4A001F8F86 /* WLComponentStyle.swift */,
 				2074F7EE284557010021FE79 /* WLAlignmentStyle.swift */,
-				20706C20284D0ABF00236DF9 /* WLNavigationBar.swift */,
 				2074F7F02845572D0021FE79 /* WLStatusBarStyle.swift */,
-				2032331F284D699D0074F366 /* WLEnvironmentType.swift */,
 				20065C0B28450ECA00B1B30C /* Extensions.swift */,
 			);
 			path = Models;
@@ -419,6 +423,7 @@
 				20FD29592842DEBC00DA2FBE /* WLComponentType.swift in Sources */,
 				20D6866A284432D7006038E5 /* WLVerticalSpacingComponent.swift in Sources */,
 				20BAB6E8284C0DC700A81B59 /* WLLoadingView.swift in Sources */,
+				203CE199284E8EB0007B2D7F /* WLViewSettings.swift in Sources */,
 				20BADBBA284E32F500AD9583 /* WLLocalView.swift in Sources */,
 				2046375C28428ECA00E0A7C9 /* WLGenericView.swift in Sources */,
 				2074F7EF284557010021FE79 /* WLAlignmentStyle.swift in Sources */,
@@ -450,6 +455,7 @@
 				20DBB72D284C0423000FBA53 /* WLComponentType.swift in Sources */,
 				20DBB72E284C0423000FBA53 /* WLVerticalSpacingComponent.swift in Sources */,
 				20BAB6E7284C0DB400A81B59 /* WLLoadingView.swift in Sources */,
+				203CE19A284E8EB0007B2D7F /* WLViewSettings.swift in Sources */,
 				20BADBBB284E32F500AD9583 /* WLLocalView.swift in Sources */,
 				20DBB730284C0423000FBA53 /* WLGenericView.swift in Sources */,
 				20DBB731284C0423000FBA53 /* WLAlignmentStyle.swift in Sources */,

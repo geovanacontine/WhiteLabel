@@ -8,6 +8,6 @@
 import SwiftUI
 
 protocol WLComponent: Decodable {
-    var id: String { get }
+    var tag: String? { get }
     func render() -> AnyView
 }

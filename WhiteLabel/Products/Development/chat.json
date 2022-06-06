@@ -11,6 +11,11 @@
                 "icon": {
                     "name": "chat"
                 }
+            },
+            "actions": {
+                "onTap": {
+                    "view": "payment"
+                }
             }
         }
     ]

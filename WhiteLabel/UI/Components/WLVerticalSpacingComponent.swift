@@ -9,7 +9,7 @@ import SwiftUI
 import Treco
 
 struct WLVerticalSpacingComponent: WLComponent {
-    let id = UUID().uuidString
+    let tag: String?
     let data: WLVerticalSpacingDTO?
     let style: WLComponentStyle?
     
