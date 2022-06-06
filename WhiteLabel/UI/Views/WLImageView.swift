@@ -13,6 +13,7 @@ enum WLImageSize: String {
     case iconMD = "icon_md"
     case iconLG = "icon_lg"
     case iconXL = "icon_xl"
+    case bannerMD = "banner_md"
 }
 
 extension WLImageSize {
@@ -26,6 +27,8 @@ extension WLImageSize {
             return 32
         case .iconXL:
             return 48
+        case .bannerMD:
+            return 307
         }
     }
     
@@ -39,6 +42,8 @@ extension WLImageSize {
             return 32
         case .iconXL:
             return 48
+        case .bannerMD:
+            return 150
         }
     }
 }

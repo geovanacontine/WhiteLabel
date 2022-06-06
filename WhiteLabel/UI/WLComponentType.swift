@@ -11,6 +11,7 @@ enum WLComponentType: String, Decodable {
     case cell = "CellComponent"
     case text = "TextComponent"
     case verticalSpacing = "VerticalSpacingComponent"
+    case imageCollection = "ImageCollectionComponent"
 }
 
 extension WLComponentType {
@@ -22,6 +23,8 @@ extension WLComponentType {
             return WLTextComponent.self
         case .verticalSpacing:
             return WLVerticalSpacingComponent.self
+        case .imageCollection:
+            return WLImageCollectionComponent.self
         }
     }
 }

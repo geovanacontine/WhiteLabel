@@ -23,6 +23,23 @@
             }
         },
         {
+            "id": "ImageCollectionComponent",
+            "tag": "banners",
+            "data": {
+                "items": [
+                    {
+                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-1.png"
+                    },
+                    {
+                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-2.png"
+                    },
+                    {
+                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-3.png"
+                    }
+                ]
+            }
+        },
+        {
             "id": "CellComponent",
             "tag": "chatCell",
             "data": {

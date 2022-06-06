@@ -18,6 +18,8 @@
 		20323326284D73410074F366 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CBE284BE7A800BBD585 /* chat.json */; };
 		203CE199284E8EB0007B2D7F /* WLViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203CE198284E8EB0007B2D7F /* WLViewSettings.swift */; };
 		203CE19A284E8EB0007B2D7F /* WLViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203CE198284E8EB0007B2D7F /* WLViewSettings.swift */; };
+		203CE19D284E9D73007B2D7F /* WLImageCollectionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203CE19C284E9D73007B2D7F /* WLImageCollectionComponent.swift */; };
+		203CE19E284E9D73007B2D7F /* WLImageCollectionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203CE19C284E9D73007B2D7F /* WLImageCollectionComponent.swift */; };
 		2046374628428CEA00E0A7C9 /* WhiteLabelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046374528428CEA00E0A7C9 /* WhiteLabelApp.swift */; };
 		2046374D28428CEC00E0A7C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374C28428CEC00E0A7C9 /* Preview Assets.xcassets */; };
 		2046375728428E6800E0A7C9 /* WLComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046375628428E6800E0A7C9 /* WLComponent.swift */; };
@@ -80,6 +82,7 @@
 		2032331F284D699D0074F366 /* WLEnvironmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLEnvironmentType.swift; sourceTree = "<group>"; };
 		20323323284D6B170074F366 /* WLNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLNetwork.swift; sourceTree = "<group>"; };
 		203CE198284E8EB0007B2D7F /* WLViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLViewSettings.swift; sourceTree = "<group>"; };
+		203CE19C284E9D73007B2D7F /* WLImageCollectionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLImageCollectionComponent.swift; sourceTree = "<group>"; };
 		2046374228428CEA00E0A7C9 /* Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Development.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2046374528428CEA00E0A7C9 /* WhiteLabelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteLabelApp.swift; sourceTree = "<group>"; };
 		2046374928428CEC00E0A7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,6 +221,7 @@
 				20FD295F2842E45F00DA2FBE /* WLTextComponent.swift */,
 				20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */,
 				204FDF9228440FA400D98196 /* WLCellComponent.swift */,
+				203CE19C284E9D73007B2D7F /* WLImageCollectionComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -432,6 +436,7 @@
 				20B80B03284AD3F700A13BC7 /* WLImageView.swift in Sources */,
 				2046375728428E6800E0A7C9 /* WLComponent.swift in Sources */,
 				20706C21284D0ABF00236DF9 /* WLNavigationBar.swift in Sources */,
+				203CE19D284E9D73007B2D7F /* WLImageCollectionComponent.swift in Sources */,
 				20FD29552842DB3600DA2FBE /* WLAnyComponent.swift in Sources */,
 				2074F7F12845572D0021FE79 /* WLStatusBarStyle.swift in Sources */,
 				2046374628428CEA00E0A7C9 /* WhiteLabelApp.swift in Sources */,
@@ -464,6 +469,7 @@
 				20DBB734284C0423000FBA53 /* WLImageView.swift in Sources */,
 				20DBB735284C0423000FBA53 /* WLComponent.swift in Sources */,
 				20706C24284D0B4F00236DF9 /* WLNavigationBar.swift in Sources */,
+				203CE19E284E9D73007B2D7F /* WLImageCollectionComponent.swift in Sources */,
 				20DBB736284C0423000FBA53 /* WLAnyComponent.swift in Sources */,
 				20DBB737284C0423000FBA53 /* WLStatusBarStyle.swift in Sources */,
 				20DBB738284C0423000FBA53 /* WhiteLabelApp.swift in Sources */,
