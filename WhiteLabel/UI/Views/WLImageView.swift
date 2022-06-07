@@ -51,6 +51,7 @@ struct WLImageDTO: Decodable {
     let height: Double?
     let border: String?
     let tintColor: String?
+    let isDynamicWidth: Bool?
 }
 
 struct WLImageView: View {
@@ -67,7 +68,8 @@ struct WLImageView: View {
          width: Double? = nil,
          height: Double? = nil,
          border: BorderRadius? = nil,
-         tintColor: Colors? = nil) {
+         tintColor: Colors? = nil,
+         isDynamicWidth: Bool? = false) {
         
         self.dto = .init(name: name,
                          size: size?.rawValue,
@@ -75,7 +77,8 @@ struct WLImageView: View {
                          width: width,
                          height: height,
                          border: border?.rawValue,
-                         tintColor: tintColor?.rawValue)
+                         tintColor: tintColor?.rawValue,
+                         isDynamicWidth: isDynamicWidth)
     }
     
     private var url: URL? {
@@ -88,6 +91,7 @@ struct WLImageView: View {
                 image.resizable()
             } placeholder: {
                 Color.treco(.neutralDark3)
+                    .frame(height: dto?.height ?? 0)
             }
             .applyImageStyle(dto)
         } else {
@@ -130,10 +134,16 @@ struct WLImageModifier: ViewModifier {
         dto?.height ?? size.height
     }
     
+    private var isDynamicWidth: Bool {
+        dto?.isDynamicWidth ?? false
+    }
+    
     func body(content: Content) -> some View {
         content
             .scaledToFill()
-            .frame(width: width, height: height)
+            .if(!isDynamicWidth, transform: { view in
+                view.frame(width: width, height: height)
+            })
             .foregroundColor(color)
             .cornerRadius(border.value)
             .if(isCircle) { view in

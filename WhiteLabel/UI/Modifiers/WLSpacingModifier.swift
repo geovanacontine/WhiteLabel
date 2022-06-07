@@ -55,7 +55,7 @@ struct WLSpacingModifier: ViewModifier {
                 Spacer()
                     .frame(width: left)
                 
-                if alignment == .right || alignment == .center {
+                if alignment == .right {
                     Spacer()
                 }
                 
@@ -64,7 +64,7 @@ struct WLSpacingModifier: ViewModifier {
                         view.multilineTextAlignment(.center)
                     })
                 
-                if alignment == .left || alignment == .center {
+                if alignment == .left {
                     Spacer()
                 }
                 

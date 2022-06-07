@@ -65,6 +65,8 @@
 		20DBB738284C0423000FBA53 /* WhiteLabelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046374528428CEA00E0A7C9 /* WhiteLabelApp.swift */; };
 		20DBB73A284C0423000FBA53 /* Treco in Frameworks */ = {isa = PBXBuildFile; productRef = 20DBB723284C0423000FBA53 /* Treco */; };
 		20DBB73C284C0423000FBA53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2046374C28428CEC00E0A7C9 /* Preview Assets.xcassets */; };
+		20E37D7C285001BE0000D104 /* WLImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E37D7B285001BE0000D104 /* WLImageComponent.swift */; };
+		20E37D7D285001BE0000D104 /* WLImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E37D7B285001BE0000D104 /* WLImageComponent.swift */; };
 		20EAF0B1284D291E0099DE17 /* genericError.json in Resources */ = {isa = PBXBuildFile; fileRef = 20BAB6EF284C128C00A81B59 /* genericError.json */; };
 		20F7E5432842EB94001F8F86 /* WLSpacingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */; };
 		20F7E5452842EC4A001F8F86 /* WLComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F7E5442842EC4A001F8F86 /* WLComponentStyle.swift */; };
@@ -106,6 +108,7 @@
 		20BADBB9284E32F500AD9583 /* WLLocalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLocalView.swift; sourceTree = "<group>"; };
 		20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVerticalSpacingComponent.swift; sourceTree = "<group>"; };
 		20DBB746284C0423000FBA53 /* VoiceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E37D7B285001BE0000D104 /* WLImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLImageComponent.swift; sourceTree = "<group>"; };
 		20F7E5422842EB94001F8F86 /* WLSpacingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSpacingModifier.swift; sourceTree = "<group>"; };
 		20F7E5442842EC4A001F8F86 /* WLComponentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLComponentStyle.swift; sourceTree = "<group>"; };
 		20FD29522842D5A700DA2FBE /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
@@ -222,6 +225,7 @@
 				20D68669284432D7006038E5 /* WLVerticalSpacingComponent.swift */,
 				204FDF9228440FA400D98196 /* WLCellComponent.swift */,
 				203CE19C284E9D73007B2D7F /* WLImageCollectionComponent.swift */,
+				20E37D7B285001BE0000D104 /* WLImageComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -426,6 +430,7 @@
 				20706C1D284D094200236DF9 /* WLProductSettings.swift in Sources */,
 				20FD29592842DEBC00DA2FBE /* WLComponentType.swift in Sources */,
 				20D6866A284432D7006038E5 /* WLVerticalSpacingComponent.swift in Sources */,
+				20E37D7C285001BE0000D104 /* WLImageComponent.swift in Sources */,
 				20BAB6E8284C0DC700A81B59 /* WLLoadingView.swift in Sources */,
 				203CE199284E8EB0007B2D7F /* WLViewSettings.swift in Sources */,
 				20BADBBA284E32F500AD9583 /* WLLocalView.swift in Sources */,
@@ -459,6 +464,7 @@
 				20706C1E284D09AE00236DF9 /* WLProductSettings.swift in Sources */,
 				20DBB72D284C0423000FBA53 /* WLComponentType.swift in Sources */,
 				20DBB72E284C0423000FBA53 /* WLVerticalSpacingComponent.swift in Sources */,
+				20E37D7D285001BE0000D104 /* WLImageComponent.swift in Sources */,
 				20BAB6E7284C0DB400A81B59 /* WLLoadingView.swift in Sources */,
 				203CE19A284E8EB0007B2D7F /* WLViewSettings.swift in Sources */,
 				20BADBBB284E32F500AD9583 /* WLLocalView.swift in Sources */,

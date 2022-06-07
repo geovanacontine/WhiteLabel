@@ -8,8 +8,7 @@
 import Foundation
 
 protocol WLNetworkProtocol {
-    func getView(named viewName: String,
-                 completion: @escaping (WLServerView) -> Void)
+    func getView(named viewName: String) async -> WLServerView
 }
 
 final class WLNetwork: WLNetworkProtocol {
@@ -20,37 +19,28 @@ final class WLNetwork: WLNetworkProtocol {
         self.productSettings = productSettings
     }
     
-    func getView(named viewName: String,
-                 completion: @escaping (WLServerView) -> Void) {
-        
+    func getView(named viewName: String) async -> WLServerView {
         switch productSettings.environment {
         case .local:
-            getLocalViewWithDelay(named: viewName, completion: completion)
+            return await getLocalViewWithDelay(named: viewName)
         case .production:
-            getRemoteView(named: viewName, completion: completion)
+            return await getRemoteView(named: viewName)
         }
     }
 }
 
 extension WLNetwork {
-    private func getRemoteView(named viewName: String,
-                               completion: @escaping (WLServerView) -> Void) {
-        
+    private func getRemoteView(named viewName: String) async -> WLServerView {
         let view = getLocalView(named: viewName)
         let errorView = getLocalErrorView()
-        let responseView = view ?? errorView
-        completion(responseView)
+        return view ?? errorView
     }
     
-    private func getLocalViewWithDelay(named viewName: String,
-                                       completion: @escaping (WLServerView) -> Void) {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
-            let localView = self?.getLocalView(named: viewName)
-            let errorView = self?.getLocalErrorView()
-            let responseView = localView ?? errorView
-            completion(responseView ?? .init(body: [], header: nil))
-        }
+    private func getLocalViewWithDelay(named viewName: String) async -> WLServerView {
+        try? await Task.sleep(seconds: 1)
+        let localView = getLocalView(named: viewName)
+        let errorView = getLocalErrorView()
+        return localView ?? errorView
     }
     
     private func getLocalView(named viewName: String) -> WLServerView? {

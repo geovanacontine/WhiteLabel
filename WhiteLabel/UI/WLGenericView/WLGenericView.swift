@@ -44,15 +44,15 @@ struct WLGenericView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("")
         .navigationBarBackButtonHidden(controller.isRootView())
-        .onAppear(perform: {
-            controller.loadView()
-        })
         .toolbar {
             ToolbarItem(placement: .principal) {
                 TrecoText(controller.view?.header?.title ?? "")
                     .textStyle(.heading4, color: productSettings.navigationTitleColor)
                     .frame(minWidth: 200)
             }
+        }
+        .task {
+            await controller.loadView()
         }
     }
     

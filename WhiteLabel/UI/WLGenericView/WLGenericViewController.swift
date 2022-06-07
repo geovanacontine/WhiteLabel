@@ -23,17 +23,15 @@ final class WLGenericViewController: ObservableObject {
         self.network = network
     }
     
-    func loadView() {
+    @MainActor
+    func loadView() async {
         guard view == nil else {
             return
         }
         
         isLoading = true
-        
-        network.getView(named: viewName) { [weak self] view in
-            self?.view = view
-            self?.isLoading = false
-        }
+        view = await network.getView(named: viewName)
+        isLoading = false
     }
     
     func isRootView() -> Bool {

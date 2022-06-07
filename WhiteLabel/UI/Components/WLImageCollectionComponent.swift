@@ -35,7 +35,11 @@ struct WLImageCollectionView: View {
     let style: WLComponentStyle?
     
     private var margin: CGFloat {
-        Spacing.init(fromRawValue: style?.bounds?.left ?? "xs").value
+        Spacing.init(fromRawValue: style?.bounds?.left ?? "xs").value - spacing
+    }
+    
+    private var spacing: CGFloat {
+        dto?.spacing ?? Spacing.xxs.value
     }
     
     private var height: CGFloat {
@@ -51,7 +55,7 @@ struct WLImageCollectionView: View {
             Spacer()
                 .frame(height: Spacing.init(fromRawValue: style?.bounds?.top ?? "").value)
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack(spacing: dto?.spacing ?? Spacing.xxs.value) {
+                LazyHStack(spacing: spacing) {
                     Spacer()
                         .frame(width: margin, height: height)
                     ForEach(dto?.items ?? [], id: \.url) { item in
