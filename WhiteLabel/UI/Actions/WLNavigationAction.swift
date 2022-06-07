@@ -41,18 +41,17 @@ struct NavigatableModifier: ViewModifier {
         if navigationAction == nil {
             content
         } else {
-            Button {
-                isShowingSubview = true
-            } label: {
-                VStack {
-                    if isModal {
-                        content
-                            .sheet(isPresented: $isShowingSubview) { destination }
-                    } else {
-                        NavigationLink(destination: destination, isActive: $isShowingSubview) { EmptyView() }
-                        content
-                    }
+            VStack {
+                if isModal {
+                    content
+                        .sheet(isPresented: $isShowingSubview) { destination }
+                } else {
+                    NavigationLink(destination: destination, isActive: $isShowingSubview) { EmptyView() }
+                    content
                 }
+            }
+            .onTapGesture {
+                isShowingSubview = true
             }
         }
     }

@@ -18,7 +18,7 @@
             "style": {
                 "bounds": {
                     "top": "sm",
-                    "bottom": "lg"
+                    "bottom": "sm"
                 }
             }
         },
@@ -26,17 +26,33 @@
             "id": "ImageCollectionComponent",
             "tag": "banners",
             "data": {
+                "height": 150,
+                "width": 307,
                 "items": [
                     {
-                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-1.png"
+                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-1.png",
+                        "onTap": {
+                            "view": "chat"
+                        }
                     },
                     {
-                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-2.png"
+                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-2.png",
+                        "onTap": {
+                            "view": "notifications"
+                        }
                     },
                     {
-                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-3.png"
+                        "url": "https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/landing/landing-banner-3.png",
+                        "onTap": {
+                            "view": "chat3"
+                        }
                     }
                 ]
+            },
+            "style": {
+                "bounds": {
+                    "bottom": "sm"
+                }
             }
         },
         {
