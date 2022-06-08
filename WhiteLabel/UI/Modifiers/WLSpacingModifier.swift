@@ -44,7 +44,7 @@ struct WLSpacingModifier: ViewModifier {
     }
     
     private var alignment: WLAlignmentStyle {
-        .init(rawValue: bounds?.alignment ?? "") ?? .left
+        .init(rawValue: bounds?.alignment ?? "") ?? .center
     }
     
     func body(content: Content) -> some View {

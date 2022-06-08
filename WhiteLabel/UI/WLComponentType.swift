@@ -13,6 +13,7 @@ enum WLComponentType: String, Decodable {
     case verticalSpacing = "VerticalSpacingComponent"
     case imageCollection = "ImageCollectionComponent"
     case image = "ImageComponent"
+    case button = "ButtonComponent"
 }
 
 extension WLComponentType {
@@ -28,6 +29,8 @@ extension WLComponentType {
             return WLImageCollectionComponent.self
         case .image:
             return WLImageComponent.self
+        case .button:
+            return WLButtonComponent.self
         }
     }
 }

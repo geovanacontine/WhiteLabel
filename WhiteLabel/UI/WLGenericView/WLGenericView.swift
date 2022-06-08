@@ -31,7 +31,7 @@ struct WLGenericView: View {
                 if controller.isLoading {
                     WLLoadingView()
                 } else {
-                    ScrollView(scrollAxes) {
+                    ScrollView(scrollAxes, showsIndicators: false) {
                         LazyVStack {
                             ForEach(controller.view?.body ?? [], id: \.tag) { component in
                                 component.render()

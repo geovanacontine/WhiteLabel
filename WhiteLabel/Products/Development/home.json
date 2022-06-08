@@ -18,7 +18,8 @@
             "style": {
                 "bounds": {
                     "top": "sm",
-                    "bottom": "sm"
+                    "bottom": "sm",
+                    "alignment": "left"
                 }
             }
         },
@@ -61,15 +62,53 @@
             "data": {
                 "url": "https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg",
                 "height": 20,
-                "border": "small"
+                "border": "medium"
             },
             "style": {
                 "bounds": {
-                    "bottom": "sm"
+                    "bottom": "xs"
                 }
             },
             "onTap": {
                 "view": "chat"
+            }
+        },
+        {
+            "id": "ButtonComponent",
+            "tag": "button1",
+            "data": {
+                "title": "Botão primário"
+            },
+            "style": {
+                "bounds": {
+                    "bottom": "xxs"
+                }
+            }
+        },
+        {
+            "id": "ButtonComponent",
+            "tag": "button2",
+            "data": {
+                "title": "Botão secundário",
+                "type": "secondary"
+            },
+            "style": {
+                "bounds": {
+                    "bottom": "xxs"
+                }
+            }
+        },
+        {
+            "id": "ButtonComponent",
+            "tag": "button3",
+            "data": {
+                "title": "Botão terciário",
+                "type": "tertiary"
+            },
+            "style": {
+                "bounds": {
+                    "bottom": "xs"
+                }
             }
         },
         {

@@ -23,11 +23,7 @@ struct WLImageComponent: WLComponent {
                                border: data?.border,
                                tintColor: nil,
                                isDynamicWidth: true))
-            .applySpacing(.init(top: style?.bounds?.top,
-                                bottom: style?.bounds?.bottom,
-                                left: style?.bounds?.left,
-                                right: style?.bounds?.right,
-                                alignment: "center"))
+            .applySpacing(style?.bounds)
             .applyNavigation(onTap)
             .toAny()
     }

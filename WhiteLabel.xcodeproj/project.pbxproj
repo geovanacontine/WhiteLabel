@@ -35,6 +35,10 @@
 		2074F7F12845572D0021FE79 /* WLStatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074F7F02845572D0021FE79 /* WLStatusBarStyle.swift */; };
 		20900CC3284BEC8F00BBD585 /* notifications.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CC2284BEC8F00BBD585 /* notifications.json */; };
 		20900CC5284BECC000BBD585 /* payment.json in Resources */ = {isa = PBXBuildFile; fileRef = 20900CC4284BECC000BBD585 /* payment.json */; };
+		209CFB2A285029AC00A6C9DC /* WLButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209CFB29285029AC00A6C9DC /* WLButtonComponent.swift */; };
+		209CFB2B285029AC00A6C9DC /* WLButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209CFB29285029AC00A6C9DC /* WLButtonComponent.swift */; };
+		209CFB2D28502F0E00A6C9DC /* WLButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209CFB2C28502F0E00A6C9DC /* WLButtonType.swift */; };
+		209CFB2E28502F0E00A6C9DC /* WLButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209CFB2C28502F0E00A6C9DC /* WLButtonType.swift */; };
 		20B80AFF284AC3CF00A13BC7 /* WLVisibleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */; };
 		20B80B03284AD3F700A13BC7 /* WLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80B02284AD3F700A13BC7 /* WLImageView.swift */; };
 		20BAB6E7284C0DB400A81B59 /* WLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BAB6E6284C0DB400A81B59 /* WLLoadingView.swift */; };
@@ -101,6 +105,8 @@
 		20900CBE284BE7A800BBD585 /* chat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
 		20900CC2284BEC8F00BBD585 /* notifications.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = notifications.json; sourceTree = "<group>"; };
 		20900CC4284BECC000BBD585 /* payment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = payment.json; sourceTree = "<group>"; };
+		209CFB29285029AC00A6C9DC /* WLButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLButtonComponent.swift; sourceTree = "<group>"; };
+		209CFB2C28502F0E00A6C9DC /* WLButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WLButtonType.swift; path = ../../../../../../../Downloads/WLButtonType.swift; sourceTree = "<group>"; };
 		20B80AFE284AC3CF00A13BC7 /* WLVisibleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVisibleModifier.swift; sourceTree = "<group>"; };
 		20B80B02284AD3F700A13BC7 /* WLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLImageView.swift; sourceTree = "<group>"; };
 		20BAB6E6284C0DB400A81B59 /* WLLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLoadingView.swift; sourceTree = "<group>"; };
@@ -226,6 +232,7 @@
 				204FDF9228440FA400D98196 /* WLCellComponent.swift */,
 				203CE19C284E9D73007B2D7F /* WLImageCollectionComponent.swift */,
 				20E37D7B285001BE0000D104 /* WLImageComponent.swift */,
+				209CFB29285029AC00A6C9DC /* WLButtonComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -292,6 +299,7 @@
 				2074F7EE284557010021FE79 /* WLAlignmentStyle.swift */,
 				2074F7F02845572D0021FE79 /* WLStatusBarStyle.swift */,
 				20065C0B28450ECA00B1B30C /* Extensions.swift */,
+				209CFB2C28502F0E00A6C9DC /* WLButtonType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -426,6 +434,7 @@
 				20323324284D6B170074F366 /* WLNetwork.swift in Sources */,
 				20B80AFF284AC3CF00A13BC7 /* WLVisibleModifier.swift in Sources */,
 				20FD295D2842DF9600DA2FBE /* WLServerView.swift in Sources */,
+				209CFB2A285029AC00A6C9DC /* WLButtonComponent.swift in Sources */,
 				20F7E5452842EC4A001F8F86 /* WLComponentStyle.swift in Sources */,
 				20706C1D284D094200236DF9 /* WLProductSettings.swift in Sources */,
 				20FD29592842DEBC00DA2FBE /* WLComponentType.swift in Sources */,
@@ -443,6 +452,7 @@
 				20706C21284D0ABF00236DF9 /* WLNavigationBar.swift in Sources */,
 				203CE19D284E9D73007B2D7F /* WLImageCollectionComponent.swift in Sources */,
 				20FD29552842DB3600DA2FBE /* WLAnyComponent.swift in Sources */,
+				209CFB2D28502F0E00A6C9DC /* WLButtonType.swift in Sources */,
 				2074F7F12845572D0021FE79 /* WLStatusBarStyle.swift in Sources */,
 				2046374628428CEA00E0A7C9 /* WhiteLabelApp.swift in Sources */,
 			);
@@ -460,6 +470,7 @@
 				20323325284D6B170074F366 /* WLNetwork.swift in Sources */,
 				20DBB72A284C0423000FBA53 /* WLVisibleModifier.swift in Sources */,
 				20DBB72B284C0423000FBA53 /* WLServerView.swift in Sources */,
+				209CFB2B285029AC00A6C9DC /* WLButtonComponent.swift in Sources */,
 				20DBB72C284C0423000FBA53 /* WLComponentStyle.swift in Sources */,
 				20706C1E284D09AE00236DF9 /* WLProductSettings.swift in Sources */,
 				20DBB72D284C0423000FBA53 /* WLComponentType.swift in Sources */,
@@ -477,6 +488,7 @@
 				20706C24284D0B4F00236DF9 /* WLNavigationBar.swift in Sources */,
 				203CE19E284E9D73007B2D7F /* WLImageCollectionComponent.swift in Sources */,
 				20DBB736284C0423000FBA53 /* WLAnyComponent.swift in Sources */,
+				209CFB2E28502F0E00A6C9DC /* WLButtonType.swift in Sources */,
 				20DBB737284C0423000FBA53 /* WLStatusBarStyle.swift in Sources */,
 				20DBB738284C0423000FBA53 /* WhiteLabelApp.swift in Sources */,
 			);
